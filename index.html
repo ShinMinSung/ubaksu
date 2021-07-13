@@ -1,0 +1,2 @@
+<!DOCTYPE html> <html> <script> function p014_in(limit){ var arr = new Array(); arr[1] = 0; var max = 0; var seed = 0; for(var i=2; i<limit; i++){ var cnt = 0; var temp = i; while(temp != 1){ if(temp<i) break; else if(temp%2==0) temp /= 2; else temp = temp*3+1; cnt++; } arr[i] = cnt + arr[temp]; if (max < arr[i]) { max = arr[i]; seed = i; } } result seed; } </script> </html
+ >
